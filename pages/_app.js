@@ -27,10 +27,8 @@ export default function Nextra({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-56L3GZTYY8"
       ></script>
       <script>
-        var dataLayer = window.dataLayer = window.dataLayer || []; function
-        gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-56L3GZTYY8');
+        window.dataLayer = window.dataLayer || []; dataLayer.push('js', new
+        Date()); dataLayer.push('config', 'G-56L3GZTYY8');
       </script>
       <Component {...pageProps} />
     </>
