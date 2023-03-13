@@ -21,6 +21,15 @@ export default function Nextra({ Component, pageProps }) {
           crossOrigin="anonymous"
         />
       </Head>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-56L3GZTYY8"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; dataLayer.push('js', new
+        Date()); dataLayer.push('config', 'G-56L3GZTYY8');
+      </script>
       <Component {...pageProps} />
     </>
   )
