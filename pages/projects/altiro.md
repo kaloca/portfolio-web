@@ -6,94 +6,34 @@ tag: backend
 author: You
 ---
 
-# Markdown Examples
+# Altiro Chat
 
-## h2 Heading
+With the explosive growth of ChatGPT worldwide, I was waiting excited to see what the creative people of Latin America would do with it.
 
-### h3 Heading
+Surprisingly, it appeared that the vast majority of them had never even heard of GPT or OpenAI.
 
-#### h4 Heading
+I thought for a while. As a Brazilian, I know how much we love Whatsapp. And how every single one of us, no matter how young or old, poor or rich, has the app downloaded on their smartphones.
 
-##### h5 Heading
-
-###### h6 Heading
-
-## Emphasis
-
-**This is bold text**
-
-_This is italic text_
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Develop. Preview. Ship. – Vercel
-
-## Lists
-
-Unordered
-
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Integer molestie lorem at massa
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+It was obvious then, that putting GPT on Whatsapp was the best way to spread it across Brazil and the rest of Latin America. That's why I developed Altiro, simple and free tool in Spanish and Portuguese. To use it, just open https://altiro.chat and click on the "Whatsapp" button, you don't need any kind of registration!
 
 ## Code
 
-Inline `code`
+The Altiro tech stack is really simple. I have a Node.js server connected to the
+new Meta Cloud API for Whatsapp, (which, by the way, is free of charge for user-initiated messages). When it receives a message, the Express API puts it through a GPT pipeline that:
 
-```
-export default function Nextra({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/feed.xml"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
-}
-```
+1. Asks the original question
+2. With the question and the answer, another GPT prompt decides if the answer was appropritate, or if a Google search is needed to complement it
+3. If a Google search is needed, another GPT prompt generates the proper search query
+4. The search query is executed through Google's API
+5. A GPT-3 agent decodes the API response and produces a new answer
 
-## Tables
+This allows for the regular, chat-like conversations with GPT,
+but also for questions such as "What's Tesla stock at right now?"or
+"who won yesterday's NFL match" possible.
 
-| **Option** | **Description**                                                                                                             |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| First      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Second     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Third      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
+## Reach
 
-## Links
-
-- [Next.js](https://nextjs.org)
-- [Nextra](https://nextra.vercel.app/)
-- [Vercel](http://vercel.com)
-
-### Footnotes
-
-- Footnote [^1].
-- Footnote [^2].
-
-[^1]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^2]: Footnote text.
+With barely any marketing, Altiro has already acquired 10,000 users.
+It is a hard platform to monetize, but it shows there is a demand for
+less tech-savvy Latin Americans to have the power of GPT in their hands
+with the least possible amount of effort.
