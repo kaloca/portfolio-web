@@ -1,6 +1,6 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
-import { Analytics } from 'next/analytics/react'
+import { Analytics } from '@vercel/analytics/react'
 
 import '../styles/main.css'
 
