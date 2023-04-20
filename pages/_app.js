@@ -1,5 +1,6 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
+import { Analytics } from 'next/analytics/react'
 
 import '../styles/main.css'
 
@@ -31,6 +32,7 @@ export default function Nextra({ Component, pageProps }) {
         Date()); dataLayer.push('config', 'G-56L3GZTYY8');
       </script>
       <Component {...pageProps} />
+      <Analytics />
     </>
   )
 }
