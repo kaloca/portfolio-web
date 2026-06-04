@@ -1,5 +1,5 @@
 ---
-title: SigLIP on Jetson: Real-Time Edge Inference
+title: SigLIP on Jetson for Real-Time Edge Inference
 date: 2026/3/1
 description: INT8 quantization of an 800M vision model down to 63ms per frame
 tag: ml
